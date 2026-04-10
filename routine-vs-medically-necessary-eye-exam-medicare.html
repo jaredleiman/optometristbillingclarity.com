@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routine vs. Medically Necessary Eye Exam: How to Split Bill Medicare Correctly | OptometristBillingClarity</title>
+  <meta name="description" content="When a patient visit has both routine and medical components, split billing is required. Learn how to correctly bifurcate eye exam visits for Medicare, use ABNs, and avoid audit exposure." />
+  <link rel="canonical" href="https://optometristbillingclarity.com/blog/routine-vs-medically-necessary-eye-exam-medicare/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy: #0F2D4A; --teal: #0D7C82; --teal-pale: #EAF5F6; --cream: #F8F5EF; --cream-dark: #EFE9DF; --white: #FFFFFF; --rule: #D4C9B8; --gray-400: #9A9A9A; --gray-600: #5A5A5A; --gray-800: #2A2A2A; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'DM Sans', system-ui, sans-serif; --font-mono: 'DM Mono', monospace; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); text-decoration: none; } a:hover { text-decoration: underline; }
+    nav { background: var(--navy); padding: 0 40px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: rgba(234,245,246,0.7); }
+    .nav-cta { background: var(--teal); color: var(--white); padding: 8px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 2px; text-decoration: none; }
+    .hero { position: relative; height: 480px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; filter: brightness(0.42) saturate(0.75); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,20,35,0.95) 0%, rgba(10,20,35,0.4) 60%, transparent 100%); }
+    .hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 56px 48px; max-width: 900px; }
+    .hero-kicker { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal-pale); border-left: 3px solid var(--teal); padding-left: 10px; display: inline-block; margin-bottom: 14px; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.1; letter-spacing: -0.02em; }
+    .article-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 64px; max-width: 1100px; margin: 0 auto; padding: 64px 40px; align-items: start; }
+    .article-body h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 40px 0 16px; line-height: 1.25; }
+    .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--teal); margin: 28px 0 12px; }
+    .article-body p { font-size: 1rem; color: var(--gray-600); line-height: 1.85; margin-bottom: 20px; }
+    .article-body p strong { color: var(--navy); font-weight: 600; }
+    .article-body ul { margin: 0 0 20px 0; padding-left: 0; list-style: none; }
+    .article-body ul li { font-size: 0.97rem; color: var(--gray-600); line-height: 1.7; padding: 8px 0 8px 20px; border-bottom: 1px solid var(--cream-dark); position: relative; }
+    .article-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+    .article-body ul li:last-child { border-bottom: none; }
+    .pullquote { border-left: 4px solid var(--teal); padding: 20px 28px; margin: 32px 0; background: var(--teal-pale); }
+    .pullquote p { font-family: var(--font-display); font-size: 1.15rem; font-style: italic; color: var(--navy); line-height: 1.5; margin: 0; }
+    .code-box { background: var(--navy); padding: 24px 28px; margin: 24px 0; border-left: 4px solid var(--teal); }
+    .code-box p { font-family: var(--font-mono); font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; }
+    .code-box strong { color: var(--teal-pale); }
+    .article-img { width: 100%; margin: 32px 0; display: block; }
+    .article-img img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .article-img figcaption { font-size: 0.75rem; color: var(--gray-400); font-family: var(--font-mono); padding: 8px 0; border-bottom: 1px solid var(--rule); }
+    hr.rule { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { border: 1px solid var(--navy); border-top: 4px solid var(--teal); padding: 28px; margin-bottom: 24px; }
+    .sidebar-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sidebar-card p { font-size: 0.87rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 16px; }
+    .sidebar-cta { display: block; background: var(--teal); color: var(--white); text-align: center; padding: 12px; font-size: 0.87rem; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .sidebar-links { list-style: none; }
+    .sidebar-links li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 0.87rem; }
+    .sidebar-links li:last-child { border-bottom: none; }
+    footer { background: var(--navy); padding: 36px 40px; text-align: center; margin-top: 64px; }
+    footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.7; }
+    footer a { color: rgba(13,124,130,0.8); }
+    @media (max-width: 860px) { .article-wrap { grid-template-columns: 1fr; gap: 40px; padding: 40px 24px; } .hero-content { padding: 0 24px 40px; } .sidebar { position: static; } nav { padding: 0 20px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Optometrist<span>Billing</span>Clarity</a>
+  <a href="/#pricing" class="nav-cta">Subscribe — $247/mo</a>
+</nav>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1588776814546-1ffedda6dd9f?w=1400&q=80&auto=format&fit=crop"
+       alt="Optometrist reviewing patient exam findings and billing documentation — routine vs medically necessary eye exam Medicare split billing ABN" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-kicker">Medicare Billing · Split Billing · ABN Requirements</span>
+    <h1>Routine vs. Medically Necessary Eye Exams: How to Split Bill Medicare Correctly</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <article class="article-body">
+
+    <p>Every independent OD practice sees patients who arrive for what appears to be a routine exam but also have medical conditions that require evaluation. The question of how to bill these visits — or whether to split them — is one of the most nuanced compliance challenges in optometry Medicare billing.</p>
+
+    <p>Getting it wrong in either direction creates exposure. Billing the entire visit to Medicare when part of it was routine is overbilling. Billing the entire visit to a vision plan when part of it was medically necessary means leaving legitimate Medicare revenue uncollected — and potentially violating participation agreements.</p>
+
+    <hr class="rule" />
+
+    <h2>The Core Principle: Medicare Covers Medical, Not Routine</h2>
+
+    <p>Medicare Part B covers medically necessary eye care. It explicitly excludes routine vision exams — those performed to determine the need for corrective lenses or to update a glasses prescription. When a patient visit includes both medical and routine components, the visit must be bifurcated: the medical portion billed to Medicare, and the routine portion billed elsewhere (vision plan, patient self-pay).</p>
+
+    <div class="pullquote">
+      <p>"A visit that includes both a medical eye exam and a refraction is not entirely covered by Medicare. The refraction is always routine — Medicare does not cover refractions under any circumstances."</p>
+    </div>
+
+    <h2>What Is Always Routine (Never Medicare-Covered)</h2>
+
+    <p>Regardless of the patient's medical conditions, these services are never covered by Medicare Part B:</p>
+
+    <ul>
+      <li>Refraction (the determination of glasses or contact lens prescription)</li>
+      <li>Contact lens fittings</li>
+      <li>Routine vision checks with no medical complaint or diagnosis</li>
+      <li>Glasses or contact lens prescriptions as the primary purpose of the visit</li>
+    </ul>
+
+    <figure class="article-img">
+      <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?w=900&q=80&auto=format&fit=crop"
+           alt="Eye examination with refraction equipment — routine vision services not covered by Medicare Part B split billing required" />
+      <figcaption>Refractions are never covered by Medicare Part B — even for patients with medical eye conditions. Split billing is required when both services are performed.</figcaption>
+    </figure>
+
+    <h2>When Split Billing Is Required</h2>
+
+    <p>Split billing is required when a single patient visit includes both a medically necessary eye exam component and a routine component. The most common scenario is a patient with a medical eye condition (glaucoma, diabetic retinopathy, macular degeneration) who also wants a new glasses prescription.</p>
+
+    <p>In this scenario, the medical exam is billable to Medicare Part B (using 92004/92014 with the appropriate medical diagnosis). The refraction is billed separately — either to a vision plan if the patient has one, or as a patient self-pay service.</p>
+
+    <h2>The ABN Requirement</h2>
+
+    <p>When a service will not be covered by Medicare and the patient will be responsible for payment, an Advance Beneficiary Notice of Noncoverage (ABN) is required. For split billing scenarios, the ABN should be given to the patient before the routine portion of the visit to document that they understand Medicare will not cover it and they will be responsible for that cost.</p>
+
+    <div class="code-box">
+      <p><strong>ABN Timing:</strong> Must be given BEFORE the service is performed — not after<br>
+      <strong>ABN Content:</strong> Must specify which service won't be covered and the estimated cost<br>
+      <strong>ABN Signature:</strong> Patient must sign — unsigned ABNs are not valid<br>
+      <strong>ABN Retention:</strong> Keep signed ABNs in the patient file for at least 4 years</p>
+    </div>
+
+    <h3>When an ABN Is Not Required</h3>
+    <p>If a service is categorically excluded from Medicare coverage (like a refraction), a standard ABN is not technically required — but it is still best practice to inform patients in writing that the service is not covered and obtain their agreement to pay. Many practices use a standard "Medicare Vision Exclusion" notice for refractions.</p>
+
+    <h2>How to Structure the Claim</h2>
+
+    <p>When split billing a visit with both medical and routine components:</p>
+
+    <ul>
+      <li>Bill Medicare Part B for the medical exam component using 92004 or 92014 with the medical diagnosis code</li>
+      <li>Do not include the refraction on the Medicare claim</li>
+      <li>Bill the refraction separately to the vision plan using the appropriate vision plan code, or to the patient directly</li>
+      <li>Document both components separately in the chart note</li>
+      <li>Retain the signed ABN or vision exclusion notice</li>
+    </ul>
+
+    <h2>The Most Common Split Billing Errors</h2>
+
+    <ul>
+      <li><strong>Billing the entire visit to Medicare</strong> including a refraction — Medicare will deny the refraction and may flag the pattern for audit</li>
+      <li><strong>Billing a lower-level code to Medicare</strong> to "account for" the routine portion — the Medicare claim should reflect only the medical services, coded correctly</li>
+      <li><strong>Not giving the ABN before service</strong> — retroactive ABNs are not valid; patients cannot be billed for services they weren't informed about in advance</li>
+      <li><strong>Using refractive error as the primary diagnosis on the Medicare claim</strong> — this signals routine care, not medical necessity, and will likely result in denial</li>
+    </ul>
+
+    <hr class="rule" />
+
+    <h2>Practical Documentation Approach</h2>
+
+    <p>The cleanest approach is to structure the chart note with clearly separated sections for the medical exam and the routine/refractive components. This makes it immediately clear to any auditor that the visit had two distinct components billed to different payers for different services.</p>
+
+    <p>Some EHR systems support separate encounter templates for medical versus routine exam components. If yours does, use them — it creates a natural documentation structure that aligns with the billing bifurcation.</p>
+
+    <hr class="rule" />
+
+    <p><em>This article is general compliance intelligence for educational purposes only. It is not legal advice and is not a substitute for a qualified healthcare attorney or certified professional coder.</em></p>
+
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>Monthly Compliance Intelligence</h3>
+      <p>Get monthly updates on Medicare billing compliance for your optometry practice — tailored to your state and payer mix.</p>
+      <a href="/#pricing" class="sidebar-cta">Subscribe — $247/month →</a>
+    </div>
+    <div class="sidebar-card">
+      <h3>Related Articles</h3>
+      <ul class="sidebar-links">
+        <li><a href="/blog/medicare-part-b-eye-exam-medical-necessity/">Medicare Part B Eye Exam Documentation Requirements</a></li>
+        <li><a href="/blog/glaucoma-screening-medicare-g0117-g0118/">Glaucoma Screening: G0117 & G0118 Requirements</a></li>
+        <li><a href="/blog/diabetic-eye-exam-medicare-vs-medicaid-s0621/">Diabetic Eye Exam: Medicare vs. Medicaid Billing</a></li>
+        <li><a href="/blog/optometry-medicare-billing-compliance-oig-2026/">OIG Enforcement Priorities for Optometry 2026</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 OptometristBillingClarity.com · A Digital Services USA property<br>
+  Compliance intelligence only. Not legal advice. <a href="/">Home</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

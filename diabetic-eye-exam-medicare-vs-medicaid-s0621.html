@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetic Eye Exam Billing: Medicare vs. Medicaid S0621 | OptometristBillingClarity</title>
+  <meta name="description" content="How to correctly bill diabetic eye exams — when to use S0621, when Medicare Part B applies, and how to avoid cross-payer billing errors that trigger audits for independent OD practices." />
+  <link rel="canonical" href="https://optometristbillingclarity.com/blog/diabetic-eye-exam-medicare-vs-medicaid-s0621/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy: #0F2D4A; --teal: #0D7C82; --teal-pale: #EAF5F6; --cream: #F8F5EF; --cream-dark: #EFE9DF; --white: #FFFFFF; --rule: #D4C9B8; --gray-400: #9A9A9A; --gray-600: #5A5A5A; --gray-800: #2A2A2A; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'DM Sans', system-ui, sans-serif; --font-mono: 'DM Mono', monospace; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); text-decoration: none; } a:hover { text-decoration: underline; }
+    nav { background: var(--navy); padding: 0 40px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: rgba(234,245,246,0.7); }
+    .nav-cta { background: var(--teal); color: var(--white); padding: 8px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 2px; text-decoration: none; }
+    .hero { position: relative; height: 480px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: brightness(0.42) saturate(0.75); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,20,35,0.95) 0%, rgba(10,20,35,0.4) 60%, transparent 100%); }
+    .hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 56px 48px; max-width: 900px; }
+    .hero-kicker { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal-pale); border-left: 3px solid var(--teal); padding-left: 10px; display: inline-block; margin-bottom: 14px; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.1; letter-spacing: -0.02em; }
+    .article-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 64px; max-width: 1100px; margin: 0 auto; padding: 64px 40px; align-items: start; }
+    .article-body h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 40px 0 16px; line-height: 1.25; }
+    .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--teal); margin: 28px 0 12px; }
+    .article-body p { font-size: 1rem; color: var(--gray-600); line-height: 1.85; margin-bottom: 20px; }
+    .article-body p strong { color: var(--navy); font-weight: 600; }
+    .article-body ul { margin: 0 0 20px 0; padding-left: 0; list-style: none; }
+    .article-body ul li { font-size: 0.97rem; color: var(--gray-600); line-height: 1.7; padding: 8px 0 8px 20px; border-bottom: 1px solid var(--cream-dark); position: relative; }
+    .article-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+    .article-body ul li:last-child { border-bottom: none; }
+    .pullquote { border-left: 4px solid var(--teal); padding: 20px 28px; margin: 32px 0; background: var(--teal-pale); }
+    .pullquote p { font-family: var(--font-display); font-size: 1.15rem; font-style: italic; color: var(--navy); line-height: 1.5; margin: 0; }
+    .code-box { background: var(--navy); padding: 24px 28px; margin: 24px 0; border-left: 4px solid var(--teal); }
+    .code-box p { font-family: var(--font-mono); font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; }
+    .code-box strong { color: var(--teal-pale); }
+    .article-img { width: 100%; margin: 32px 0; display: block; }
+    .article-img img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .article-img figcaption { font-size: 0.75rem; color: var(--gray-400); font-family: var(--font-mono); padding: 8px 0; border-bottom: 1px solid var(--rule); }
+    hr.rule { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { border: 1px solid var(--navy); border-top: 4px solid var(--teal); padding: 28px; margin-bottom: 24px; }
+    .sidebar-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sidebar-card p { font-size: 0.87rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 16px; }
+    .sidebar-cta { display: block; background: var(--teal); color: var(--white); text-align: center; padding: 12px; font-size: 0.87rem; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .sidebar-links { list-style: none; }
+    .sidebar-links li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 0.87rem; }
+    .sidebar-links li:last-child { border-bottom: none; }
+    footer { background: var(--navy); padding: 36px 40px; text-align: center; margin-top: 64px; }
+    footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.7; }
+    footer a { color: rgba(13,124,130,0.8); }
+    @media (max-width: 860px) { .article-wrap { grid-template-columns: 1fr; gap: 40px; padding: 40px 24px; } .hero-content { padding: 0 24px 40px; } .sidebar { position: static; } nav { padding: 0 20px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Optometrist<span>Billing</span>Clarity</a>
+  <a href="/#pricing" class="nav-cta">Subscribe — $247/mo</a>
+</nav>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&q=80&auto=format&fit=crop"
+       alt="Healthcare provider reviewing diabetic patient eye exam records — S0621 Medicare Medicaid diabetic retinopathy screening billing compliance" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-kicker">Medicare vs. Medicaid Billing · Diabetic Eye Exams · S0621</span>
+    <h1>Diabetic Eye Exam Billing: When to Use S0621 and When Medicare Part B Applies</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <article class="article-body">
+
+    <p>Diabetic eye exams are among the most frequently billed services in independent optometry — and among the most frequently miscoded. The confusion stems from a payer structure that splits coverage between Medicare Part B and state Medicaid programs in ways that vary by state and by patient eligibility.</p>
+
+    <p>Billing a diabetic eye exam to the wrong payer is a recoverable error. CMS and state Medicaid programs have recoupment authority going back years, and cross-payer billing errors are exactly the kind of systematic issue that shows up in post-payment audits.</p>
+
+    <hr class="rule" />
+
+    <h2>Understanding S0621</h2>
+
+    <p>S0621 is an HCPCS code for diabetic eye exams — specifically, dilated eye examinations for diabetic patients. It is a <strong>Medicaid code</strong>, not a Medicare code. Medicare Part B does not recognize S0621 as a covered service.</p>
+
+    <div class="pullquote">
+      <p>"S0621 is a Medicaid code. Billing it to Medicare Part B will result in denial. The correct approach for a diabetic Medicare beneficiary is to bill the appropriate eye exam code (92004 or 92014) with the diabetes diagnosis."</p>
+    </div>
+
+    <p>The confusion arises because many diabetic patients are dual-eligible — covered by both Medicare and Medicaid — and because some state Medicaid programs use S0621 while others use different codes or coverage rules for diabetic eye exams.</p>
+
+    <figure class="article-img">
+      <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=900&q=80&auto=format&fit=crop"
+           alt="Medical professional reviewing insurance billing documentation — diabetic eye exam Medicare Medicaid payer determination S0621" />
+      <figcaption>Correct payer determination for diabetic eye exams requires understanding each patient's insurance coverage before the claim is submitted.</figcaption>
+    </figure>
+
+    <h2>How to Determine the Correct Payer</h2>
+
+    <p>The correct payer for a diabetic eye exam depends on the patient's insurance coverage:</p>
+
+    <h3>Medicare-Only Patients</h3>
+    <p>For patients covered only by Medicare Part B, bill the diabetic eye exam using the appropriate comprehensive ophthalmological service code — 92004 (new patient) or 92014 (established patient) — with the diabetes diagnosis code as the primary ICD-10 code. Do not use S0621.</p>
+
+    <h3>Medicaid-Only Patients</h3>
+    <p>For patients covered only by your state Medicaid program, check your state's specific coverage rules. Many states cover diabetic eye exams and use S0621, but some states have different codes or coverage structures. Always verify with your state Medicaid program directly.</p>
+
+    <h3>Dual-Eligible Patients (Medicare + Medicaid)</h3>
+    <p>For dual-eligible patients, Medicare is always the primary payer. Bill Medicare first using 92004/92014 with the diabetes diagnosis. If Medicare pays and there is a remaining balance, Medicaid may be billed as secondary — but only for services that Medicaid covers as secondary to Medicare. The rules vary significantly by state.</p>
+
+    <div class="code-box">
+      <p><strong>Key Rule:</strong> Medicare Part B does not cover S0621. Never bill S0621 to Medicare.<br><br>
+      <strong>For Medicare diabetic patients:</strong> Use 92004 or 92014 + E11.xx (diabetes with ophthalmic complications)<br>
+      <strong>For Medicaid diabetic patients:</strong> Check your state's coverage — S0621 may apply<br>
+      <strong>For dual-eligible patients:</strong> Medicare primary (92004/92014), Medicaid secondary per state rules</p>
+    </div>
+
+    <h2>Documentation Requirements for Diabetic Eye Exams</h2>
+
+    <p>Regardless of which payer is billed, the chart documentation for a diabetic eye exam must support the medical necessity of the visit. Key documentation elements include:</p>
+
+    <ul>
+      <li>Type of diabetes and duration (Type 1, Type 2, gestational)</li>
+      <li>Current HbA1c or most recent glycemic control data if available</li>
+      <li>Dilated fundus examination findings — specifically posterior segment evaluation for retinopathy signs</li>
+      <li>Classification of any retinopathy present (mild NPDR, moderate NPDR, severe NPDR, PDR)</li>
+      <li>Presence or absence of diabetic macular edema</li>
+      <li>Referral documentation if retinopathy is detected or progression is noted</li>
+      <li>Recommended follow-up interval based on findings</li>
+    </ul>
+
+    <h2>Frequency Considerations</h2>
+
+    <p>Medicare Part B does not specify a set frequency for diabetic eye exams — coverage is based on medical necessity. However, clinical guidelines generally support annual dilated exams for patients with well-controlled diabetes and no retinopathy, with more frequent monitoring for patients with existing retinopathy or poor glycemic control.</p>
+
+    <p>Medicaid programs typically specify frequency limits for S0621 — often once per year — and some states require prior authorization for additional exams. Always verify your state's specific Medicaid rules.</p>
+
+    <h2>Common Billing Errors to Avoid</h2>
+
+    <ul>
+      <li><strong>Billing S0621 to Medicare</strong> — S0621 is not a Medicare-recognized code; claims will deny</li>
+      <li><strong>Using a refractive error as the primary diagnosis</strong> — Diabetes must be the primary diagnosis for a diabetic eye exam claim</li>
+      <li><strong>Not documenting posterior segment findings</strong> — A diabetic eye exam without documented fundus evaluation is incomplete</li>
+      <li><strong>Billing both a diabetic eye exam and a glaucoma screening on the same date</strong> — May be appropriate but requires careful documentation of separate services</li>
+      <li><strong>Failing to bill Medicaid as secondary for dual-eligible patients</strong> — Leaves money on the table and may violate Medicaid participation requirements</li>
+    </ul>
+
+    <hr class="rule" />
+
+    <p><em>This article is general compliance intelligence for educational purposes only. It is not legal advice and is not a substitute for a qualified healthcare attorney or certified professional coder. State Medicaid rules vary significantly — always verify coverage with your specific state program.</em></p>
+
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>Monthly Compliance Intelligence</h3>
+      <p>Get monthly updates on Medicare billing compliance for your optometry practice — tailored to your state and payer mix.</p>
+      <a href="/#pricing" class="sidebar-cta">Subscribe — $247/month →</a>
+    </div>
+    <div class="sidebar-card">
+      <h3>Related Articles</h3>
+      <ul class="sidebar-links">
+        <li><a href="/blog/medicare-part-b-eye-exam-medical-necessity/">Medicare Part B Eye Exam Documentation Requirements</a></li>
+        <li><a href="/blog/glaucoma-screening-medicare-g0117-g0118/">Glaucoma Screening: G0117 & G0118 Requirements</a></li>
+        <li><a href="/blog/routine-vs-medically-necessary-eye-exam-medicare/">Routine vs. Medical: How to Split Bill Correctly</a></li>
+        <li><a href="/blog/optometry-medicare-billing-compliance-oig-2026/">OIG Enforcement Priorities for Optometry 2026</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 OptometristBillingClarity.com · A Digital Services USA property<br>
+  Compliance intelligence only. Not legal advice. <a href="/">Home</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>

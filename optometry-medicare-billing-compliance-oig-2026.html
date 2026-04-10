@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optometry Medicare Billing Compliance: OIG Enforcement Priorities 2026 | OptometristBillingClarity</title>
+  <meta name="description" content="What the OIG and CMS are actively auditing in optometry billing in 2026. Independent OD practices need to know these enforcement priorities before an audit request arrives." />
+  <link rel="canonical" href="https://optometristbillingclarity.com/blog/optometry-medicare-billing-compliance-oig-2026/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy: #0F2D4A; --teal: #0D7C82; --teal-pale: #EAF5F6; --cream: #F8F5EF; --cream-dark: #EFE9DF; --white: #FFFFFF; --rule: #D4C9B8; --gray-400: #9A9A9A; --gray-600: #5A5A5A; --gray-800: #2A2A2A; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'DM Sans', system-ui, sans-serif; --font-mono: 'DM Mono', monospace; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); text-decoration: none; } a:hover { text-decoration: underline; }
+    nav { background: var(--navy); padding: 0 40px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: rgba(234,245,246,0.7); }
+    .nav-cta { background: var(--teal); color: var(--white); padding: 8px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 2px; text-decoration: none; }
+    .hero { position: relative; height: 480px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; filter: brightness(0.42) saturate(0.75); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,20,35,0.95) 0%, rgba(10,20,35,0.4) 60%, transparent 100%); }
+    .hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 56px 48px; max-width: 900px; }
+    .hero-kicker { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--teal-pale); border-left: 3px solid var(--teal); padding-left: 10px; display: inline-block; margin-bottom: 14px; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.1; letter-spacing: -0.02em; }
+    .article-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 64px; max-width: 1100px; margin: 0 auto; padding: 64px 40px; align-items: start; }
+    .article-body h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 40px 0 16px; line-height: 1.25; }
+    .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--teal); margin: 28px 0 12px; }
+    .article-body p { font-size: 1rem; color: var(--gray-600); line-height: 1.85; margin-bottom: 20px; }
+    .article-body p strong { color: var(--navy); font-weight: 600; }
+    .article-body ul { margin: 0 0 20px 0; padding-left: 0; list-style: none; }
+    .article-body ul li { font-size: 0.97rem; color: var(--gray-600); line-height: 1.7; padding: 8px 0 8px 20px; border-bottom: 1px solid var(--cream-dark); position: relative; }
+    .article-body ul li::before { content: '—'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+    .article-body ul li:last-child { border-bottom: none; }
+    .pullquote { border-left: 4px solid var(--teal); padding: 20px 28px; margin: 32px 0; background: var(--teal-pale); }
+    .pullquote p { font-family: var(--font-display); font-size: 1.15rem; font-style: italic; color: var(--navy); line-height: 1.5; margin: 0; }
+    .code-box { background: var(--navy); padding: 24px 28px; margin: 24px 0; border-left: 4px solid var(--teal); }
+    .code-box p { font-family: var(--font-mono); font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin: 0; }
+    .code-box strong { color: var(--teal-pale); }
+    .article-img { width: 100%; margin: 32px 0; display: block; }
+    .article-img img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .article-img figcaption { font-size: 0.75rem; color: var(--gray-400); font-family: var(--font-mono); padding: 8px 0; border-bottom: 1px solid var(--rule); }
+    hr.rule { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar-card { border: 1px solid var(--navy); border-top: 4px solid var(--teal); padding: 28px; margin-bottom: 24px; }
+    .sidebar-card h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sidebar-card p { font-size: 0.87rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 16px; }
+    .sidebar-cta { display: block; background: var(--teal); color: var(--white); text-align: center; padding: 12px; font-size: 0.87rem; font-weight: 600; text-decoration: none; border-radius: 2px; }
+    .sidebar-links { list-style: none; }
+    .sidebar-links li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 0.87rem; }
+    .sidebar-links li:last-child { border-bottom: none; }
+    footer { background: var(--navy); padding: 36px 40px; text-align: center; margin-top: 64px; }
+    footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.7; }
+    footer a { color: rgba(13,124,130,0.8); }
+    @media (max-width: 860px) { .article-wrap { grid-template-columns: 1fr; gap: 40px; padding: 40px 24px; } .hero-content { padding: 0 24px 40px; } .sidebar { position: static; } nav { padding: 0 20px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Optometrist<span>Billing</span>Clarity</a>
+  <a href="/#pricing" class="nav-cta">Subscribe — $247/mo</a>
+</nav>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=1400&q=80&auto=format&fit=crop"
+       alt="Medical compliance professional reviewing healthcare billing audit documentation — optometry Medicare OIG enforcement priorities 2026 independent OD practice" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-kicker">OIG Work Plan · Medicare Enforcement · Optometry 2026</span>
+    <h1>OIG Enforcement Priorities for Optometry in 2026: What Independent OD Practices Need to Know</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <article class="article-body">
+
+    <p>The Office of Inspector General (OIG) publishes an annual Work Plan identifying the Medicare billing areas it intends to audit and investigate. For independent optometry practices, understanding what's on that list — and what MAC jurisdictions are actively reviewing — is the difference between proactive compliance and reactive damage control.</p>
+
+    <p>This guide covers the current OIG enforcement priorities relevant to optometry billing, what triggers a MAC audit, and the concrete steps independent OD practices can take to reduce their exposure.</p>
+
+    <hr class="rule" />
+
+    <h2>Why Optometry Is Under Heightened Scrutiny</h2>
+
+    <p>Optometry has been in the OIG's sights for several reasons that compound each other. First, the volume of Medicare claims is significant — there are over 17,000 independent optometry practices billing Medicare Part B, generating billions in annual claims. Second, the routine vs. medically necessary distinction creates a compliance gray zone that is inherently difficult to audit at scale but easy to flag with data analytics. Third, prior OIG audits have documented significant improper payment rates in optometry billing.</p>
+
+    <div class="pullquote">
+      <p>"The OIG has documented that a meaningful percentage of Medicare payments for eye exams lacked sufficient documentation to support medical necessity — making optometry a recurring target for post-payment review."</p>
+    </div>
+
+    <figure class="article-img">
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80&auto=format&fit=crop"
+           alt="Healthcare compliance documentation review — OIG Medicare audit optometry billing enforcement independent practice 2026" />
+      <figcaption>OIG and MAC auditors use data analytics to identify billing patterns that deviate from peer norms — outlier billing frequency and upcoding are primary triggers.</figcaption>
+    </figure>
+
+    <h2>Current OIG Enforcement Priorities in Optometry</h2>
+
+    <h3>1. Medical Necessity Documentation for Eye Exam Codes</h3>
+    <p>The primary OIG focus in optometry is documentation of medical necessity for CPT codes 92002, 92004, 92012, and 92014. The OIG has documented improper payments where claims were paid but the medical record did not support medical necessity — either because the chief complaint was routine, the diagnosis was a refractive error, or the documentation was templated and lacked patient-specific findings.</p>
+
+    <h3>2. Glaucoma Screening Code Misuse</h3>
+    <p>G0117 and G0118 are specifically identified as areas of concern in recent OIG work. Audits have found that practices bill these codes for patients who do not meet the CMS high-risk eligibility criteria, and for patients who already have diagnosed glaucoma (for whom management codes, not screening codes, are appropriate).</p>
+
+    <h3>3. Upcoding of Comprehensive Codes</h3>
+    <p>Billing 92004 or 92014 (comprehensive) when the documentation supports only an intermediate service (92002/92012) is a pattern that MAC data analytics can identify by comparing billing distributions against peer benchmarks. Practices that bill comprehensive codes at rates significantly higher than peers in the same specialty and geography are more likely to be selected for review.</p>
+
+    <h3>4. Cloned or Templated Documentation</h3>
+    <p>The use of EHR copy-forward features to populate chart notes with prior visit findings — without documenting what was actually found at today's visit — is a major audit trigger. Auditors look for notes where findings are identical across multiple visits, which suggests the documentation does not reflect an actual examination.</p>
+
+    <div class="code-box">
+      <p><strong>MAC Audit Trigger Patterns:</strong><br>
+      — Billing rate for 92014 significantly above specialty peer average<br>
+      — High frequency of G0117/G0118 relative to patient population demographics<br>
+      — Identical findings documented across multiple patient visits<br>
+      — Refractive error as primary diagnosis on Part B claims<br>
+      — Billing patterns inconsistent with patient population (e.g., high glaucoma screening in low-risk demographic area)</p>
+    </div>
+
+    <h2>How MAC Audits Are Triggered</h2>
+
+    <p>Medicare Administrative Contractors use automated data analytics to identify billing patterns that deviate from peer norms. An individual practice does not need to be doing anything intentionally wrong to be selected for audit — a billing pattern that looks like an outlier in the data is sufficient.</p>
+
+    <p>The most common audit triggers for independent OD practices include:</p>
+
+    <ul>
+      <li>Billing a higher percentage of comprehensive codes (92014) than peers in the same specialty</li>
+      <li>High volume of glaucoma screening codes relative to the practice's patient demographics</li>
+      <li>Rapid increase in billing volume year-over-year without a corresponding change in patient volume</li>
+      <li>High rate of a specific diagnosis code that doesn't match the practice's documented patient population</li>
+      <li>Complaints from patients or former employees (whistleblower referrals)</li>
+    </ul>
+
+    <h2>What Happens When an Audit Is Initiated</h2>
+
+    <p>MAC audits typically begin with an Additional Documentation Request (ADR) — a letter requesting medical records for a sample of claims. If the records don't support the claims, the MAC issues a recoupment demand for the overpayment. Practices have appeal rights, but the appeals process is lengthy and the burden of proof is on the practice to demonstrate that the original claims were supported.</p>
+
+    <p>The OIG can also conduct investigations that go beyond recoupment — including referrals to the Department of Justice for False Claims Act cases when the evidence suggests knowing or reckless overbilling. This is the higher-stakes outcome that practices must avoid through consistent, contemporaneous documentation.</p>
+
+    <h2>Proactive Steps to Reduce Audit Exposure</h2>
+
+    <ul>
+      <li><strong>Conduct an internal billing audit</strong> — Compare your code distribution for 92002/92004/92012/92014 against published Medicare data for your specialty. If you're significantly above the 92014 rate for peers, investigate why.</li>
+      <li><strong>Review glaucoma screening claim patterns</strong> — Verify that every G0117/G0118 claim in your system corresponds to a patient who meets at least one CMS high-risk criterion, documented in the chart.</li>
+      <li><strong>Audit your EHR templates for cloned documentation</strong> — If your notes look the same across visits, they will look suspicious to an auditor.</li>
+      <li><strong>Train billing staff on the routine vs. medical distinction</strong> — Front-desk and billing staff should understand when a visit requires an ABN and when bifurcated billing is appropriate.</li>
+      <li><strong>Stay current on MAC bulletin updates</strong> — MAC LCDs and billing alerts change periodically; what was acceptable practice two years ago may now be under review.</li>
+    </ul>
+
+    <hr class="rule" />
+
+    <p><em>This article is general compliance intelligence for educational purposes only. It is not legal advice and is not a substitute for a qualified healthcare attorney or certified professional coder. For specific compliance questions, consult a qualified healthcare attorney or compliance professional.</em></p>
+
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>Monthly Compliance Intelligence</h3>
+      <p>Get monthly updates on OIG enforcement priorities and Medicare billing compliance — tailored to your state and payer mix.</p>
+      <a href="/#pricing" class="sidebar-cta">Subscribe — $247/month →</a>
+    </div>
+    <div class="sidebar-card">
+      <h3>Related Articles</h3>
+      <ul class="sidebar-links">
+        <li><a href="/blog/medicare-part-b-eye-exam-medical-necessity/">Medicare Part B Eye Exam Documentation Requirements</a></li>
+        <li><a href="/blog/glaucoma-screening-medicare-g0117-g0118/">Glaucoma Screening: G0117 & G0118 Requirements</a></li>
+        <li><a href="/blog/diabetic-eye-exam-medicare-vs-medicaid-s0621/">Diabetic Eye Exam: Medicare vs. Medicaid Billing</a></li>
+        <li><a href="/blog/routine-vs-medically-necessary-eye-exam-medicare/">Routine vs. Medical: How to Split Bill Correctly</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 OptometristBillingClarity.com · A Digital Services USA property<br>
+  Compliance intelligence only. Not legal advice. <a href="/">Home</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+</body>
+</html>
