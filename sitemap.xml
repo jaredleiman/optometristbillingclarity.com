@@ -1,53 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://optometristbillingclarity.com/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/medicare-part-b-eye-exam-medical-necessity/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/glaucoma-screening-medicare-g0117-g0118/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/diabetic-eye-exam-medicare-vs-medicaid-s0621/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/routine-vs-medically-necessary-eye-exam-medicare/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://optometristbillingclarity.com/blog/optometry-medicare-billing-compliance-oig-2026/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
+  <!-- Original 5 blog posts -->
+  <url><loc>https://optometristbillingclarity.com/blog/medicare-part-b-eye-exam-medical-necessity/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/glaucoma-screening-medicare-g0117-g0118/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/diabetic-eye-exam-medicare-vs-medicaid-s0621/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/routine-vs-medically-necessary-eye-exam-medicare/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/optometry-medicare-billing-compliance-oig-2026/</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- New 10 blog posts (April 13, 2026) -->
+  <url><loc>https://optometristbillingclarity.com/blog/eye-exam-cost-without-insurance.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/does-medicare-cover-eye-exams.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/how-much-does-an-eye-exam-cost.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/does-medicare-cover-glasses.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/does-medicaid-cover-eye-exams.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/92014-cpt-code-comprehensive-eye-exam.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/92004-cpt-code-new-patient-eye-exam.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/eye-exam-cpt-codes-billing-reference.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/92012-cpt-code-established-patient-eye-exam.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://optometristbillingclarity.com/blog/does-medicare-cover-optometrist.html</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
